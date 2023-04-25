@@ -1,0 +1,94 @@
+/* POLICE D'ECRITURE  */
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Nunito+Sans:wght@200;300;400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+/* LES DIRECTIVES DE TAILWINDCSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* DESIGN GENERAL */
+#root {
+  font-family: "Nunito Sans", sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.lien {
+  @apply mx-4 my-6 md:my-0 hover:bg-vert p-2 hover:text-blanc rounded-md transition ease-in-out duration-200;
+}
+
+.sous-lien {
+  @apply text-noir hover:bg-vert hover:bg-opacity-40 w-full py-2 px-2;
+}
+/* les slide et l'arrière plan des services */
+#slide-one {
+  background-image: url("assets/images/maintenance.jpg");
+  @apply bg-cover bg-no-repeat object-cover bg-top w-full h-full relative;
+}
+#slide-two {
+  background-image: url("assets/images/tank.jpg");
+  @apply bg-cover bg-center bg-no-repeat object-cover w-full h-full relative;
+}
+
+.serviceBackground {
+  background-image: url("assets/images/personnel.png");
+  @apply bg-cover bg-center bg-no-repeat object-cover bg-fixed w-full h-auto;
+}
+/* fin du desugn slide / le trait au dessus des titres */
+
+.swiper-button-prev,
+.swiper-button-next {
+  @apply text-vert z-10;
+}
+
+span.swiper-pagination-bullet-active,
+.swiper-pagination-bullet {
+  @apply bg-vert;
+}
+
+/* couverture page de compagnie  */
+#coverAbout {
+  background-image: url("assets/images/engin1.jpg");
+  @apply bg-cover bg-center bg-no-repeat object-cover w-full h-[600px] relative;
+}
+/* couverture service nettoyage */
+#coverNettoyage {
+  background-image: url("assets/images/nettoyage.jpg");
+  @apply bg-cover bg-center bg-no-repeat object-cover w-full h-[600px] relative;
+}
+/* couverture service maintenance */
+#coverMaintenances {
+  background-image: url("assets/images/maintenances.jpg");
+  @apply bg-cover bg-center bg-no-repeat object-cover w-full h-[600px] relative;
+}
+/* couverture service logistique */
+#coverLogistique {
+  background-image: url("assets/images/logistique.jpg");
+  @apply bg-cover bg-center bg-no-repeat object-cover w-full h-[600px] relative;
+}
+/* couverture service location des engins */
+#coverEngin {
+  background-image: url("assets/images/engin.jpg");
+  @apply bg-cover bg-center bg-no-repeat object-cover w-full h-[600px] relative;
+}
+/* couverture PAGE BLOG */
+#coverBlog {
+  background-image: url("assets/images/blog.jpg");
+  @apply bg-cover bg-center bg-no-repeat object-cover w-full h-[600px] relative;
+}
+/* couverture PAGE contact */
+#coverContact {
+  background-image: url("assets/images/contact.jpg");
+  @apply bg-cover bg-center bg-no-repeat object-cover w-full h-[600px] relative;
+}
+/* ui du pied de page */
+.footer {
+  background-image: url("assets/images/maintenance1.jpg");
+  @apply bg-cover bg-center bg-no-repeat object-cover w-full h-[608px] relative;
+}
